@@ -2,5 +2,5 @@ from side import Side
 
 class Wall(Side):
 
-    def enter():
+    def enter() -> None:
         pass

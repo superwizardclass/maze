@@ -10,7 +10,7 @@ class Room(Side):
             'west': None
         }
 
-    def enter(self):
+    def enter(self) -> None:
         pass
     def get_side(self, direction: str) -> Side:
         return self.sides[direction]

@@ -9,3 +9,4 @@ class Maze():
 
     def find_room(self, room_number) -> bool:
         pass
+

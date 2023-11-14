@@ -2,5 +2,5 @@ from abc import ABC, abstractmethod
 
 class Side(ABC):
     @abstractmethod
-    def enter():
+    def enter(self) -> None:
         pass
