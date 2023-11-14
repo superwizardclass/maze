@@ -6,5 +6,6 @@ if __name__ == '__main__':
     maze_manager: MazeManager = MazeManager()
     maze_game: Maze = maze_manager.create_maze()
 
-    explorer: Explorer = Explorer()
+    # explorer: Explorer = Explorer()
+    print(str(maze_game.rooms))
     

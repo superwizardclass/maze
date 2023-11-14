@@ -8,3 +8,7 @@ class Door(Side):
 
     def enter():
         pass
+
+    def __repr__(self):
+        payload: str = f'Door({self.is_open}, {self.r1.room_number}, {self.r2.room_number})'
+        return payload

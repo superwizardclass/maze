@@ -10,3 +10,6 @@ class Maze():
     def find_room(self, room_number) -> bool:
         pass
 
+    def __repr__(self):
+        payload: str = f'Maze({repr(self.rooms)})'
+        return payload
