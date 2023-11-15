@@ -1,5 +1,8 @@
-from user import User
+from player import Player
 
-class Explorer(User):
+class Explorer(Player):
     def move() -> None:
         pass
+    def __repr__(self):
+        payload: str = f'Exlorer()'
+        return payload

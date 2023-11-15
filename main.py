@@ -1,11 +1,12 @@
 if __name__ == '__main__':
-    from maze_manager import MazeManager
+    import hello
+    from state_manager import StateManager
     from maze import Maze
-    from explorer import Explorer
+    from player import Player
 
-    maze_manager: MazeManager = MazeManager()
-    maze_game: Maze = maze_manager.create_maze()
 
-    # explorer: Explorer = Explorer()
-    print(str(maze_game.rooms))
-    
+    state_manager: StateManager = StateManager()
+    maze: Maze = state_manager.create_maze()
+    player: Player = state_manager.create_player()
+
+    hello.hello()

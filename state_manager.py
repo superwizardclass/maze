@@ -2,8 +2,10 @@ from maze import Maze
 from room import Room
 from door import Door
 from wall import Wall
+from player import Player
+from explorer import Explorer
 
-class MazeManager:
+class StateManager:
     def __init__(self):
         pass
     
@@ -27,3 +29,7 @@ class MazeManager:
         r2.set_side('west', d1_2)
 
         return m1
+
+    def create_player(self) -> Player:
+        p1: Player = Explorer()
+        return p1
